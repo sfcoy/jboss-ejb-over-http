@@ -30,7 +30,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jboss-as-ejb-over-http-module-assy</artifactId>
+    <artifactId>jboss-as-ejb-over-http-module</artifactId>
     <name>JBoss EJB over HTTP AS Module Assembly</name>
     <packaging>pom</packaging>
 
@@ -77,6 +77,24 @@
                             </outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>assemble-modules-zip</id>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <descriptor>src/main/assemble/assembly.xml</descriptor>
+                            </descriptors>
                         </configuration>
                     </execution>
                 </executions>

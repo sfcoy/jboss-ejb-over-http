@@ -115,6 +115,10 @@
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.2</version>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -176,7 +180,7 @@
     <modules>
         <module>jboss-as-ejb-over-http</module>
         <module>jboss-ejb-over-http-client</module>
-        <module>jboss-as-ejb-over-http-module-assy</module>
+        <module>jboss-as-ejb-over-http-module</module>
     </modules>
 
 </project>
