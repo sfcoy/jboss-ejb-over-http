@@ -34,7 +34,4 @@
 
     <name>JBoss EJB over HTTP Client</name>
 
-    <dependencies>
-    </dependencies>
-
 </project>
