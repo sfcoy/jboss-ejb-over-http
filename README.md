@@ -26,6 +26,11 @@ the web subsystem .
 
 You can declare multiple connectors with different virtual hosts and contexts
 
+NOTE
+----
+The current code base must be built and run against
+ * <https://github.com/emmartins/jboss-as/tree/AS7-4714-master>
+ * <https://github.com/emmartins/jboss-ejb-client/tree/AS7-4714-master>
 
 TODO
 ---
